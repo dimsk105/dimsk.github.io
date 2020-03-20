@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>Dimsk - Server Minecraft</title>
+
+  <!-- meta -->
+  <meta name="description" content="Minecraft Portal Website Template">
+  <meta name="tags" content="minecraft, website, play, mc, template">
+
+  <!-- css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+
+    </head>
+    <body>
+
+      <!-- banner start -->
+      <div class="banner">
+
+        <img style="display:none" class="img-responsive" src="http://img1.wikia.nocookie.net/__cb20111230161227/assassinscreed/images/7/70/Minecraft-logo.png" width="400px">
+
+        <h1 style="display:none;">
+          DimsCraft<br>
+          Заходи не пожелеешь!.
+        </h1>
+
+        <p style="display:none" class="btn btn-ip">Подключиться к серверу: 164.132.201.173:33063</p>
+
+      </div>
+      <!-- banner end -->
+
+
+      <!-- icons start -->
+      <div class="icons" style="display:none">
+        <p>
+          <a class="icon" id="Меню" href="https://www.youtube.com/channel/UCtaWmYpwXbS5i39rtRC-McQ?view_as=subscriber"> <i class="fa fa-home"></i> </a>
+          <a class="icon" id="Канал" href="https://www.youtube.com/channel/UCtaWmYpwXbS5i39rtRC-McQ?view_as=subscriber"> <i class="fa fa-comments-o"></i> </a>
+          <a class="icon" id="Дискорд" href="https://discord.gg/ccHwQpyя"> <i class="fa fa-thumbs-o-up"></i> </a>
+          <a class="icon" id="Вконтакте" href="https://vk.com/dimscraft"> <i class="fa fa-dollar"></i> </a>
+          <a class="icon" id="Помощь" href="ERROR"> <i class="fa fa-bullhorn"></i> </a>
+          <a class="icon" id="ПОДКЛЮЧИСЬ!" href="#"> <i class="fa fa-twitter"></i> </a>
+          <a class="icon" id="ПОДКЛЮЧИСЬ!" href="#"> <i class="fa fa-facebook"></i> </a>
+        </p>
+
+        <!-- this p element indicates the hovered button's name, no need to touch it -->
+        <p class="indicator">&nbsp;</p>
+
+      </div>
+      <!-- icons end -->
+
+      <!-- footer start -->
+      <p class="footer" style="display:none">Copyright &copy; 2020 | </p> 
+      <!-- footer end -->
+
+
+      <!-- javascript -->
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+      <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+      <script type="text/javascript">
+
+      // Update the button indicator on mouse enter
+      $('.icon').mouseenter(function() {
+        $('.indicator').html(this.id);
+      });
+
+      // Clear the button indicator on mouse leave
+      $('.icon').mouseleave(function() {
+        $('.indicator').html('&nbsp;');
+      });
+
+      // Procedural fade of each element
+      $(document).ready(function() {
+        $('img').fadeIn(function() {
+          $('h1').fadeIn(function() {
+            $('p').fadeIn(function() {
+              $('.icons').fadeIn(function() {
+                $('.footer').fadeIn();
+              });
+            });
+          });
+        });
+      });
+
+      </script>
+
+    </body>
+    </html>
